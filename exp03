@@ -1,0 +1,69 @@
+#include<iostream.h>
+class publication
+{
+public:
+string title;
+float price;
+public:
+void getdata()
+{
+cout<<"Enter title of publication";
+cin>>title;
+cout<<"Enter price of publication";
+cin>>price;
+}
+void putdata()
+{
+cout <<"Publication title:"<< title<< endl;
+cout<<"Publication price:"<< price <<endl;
+}
+};
+class book :public publication
+{
+public:
+int pagecount;
+public:
+void getdata()
+{
+publication::getdata(); //call publication class function to get data
+  
+cout <<" Enter Book Page Count :"; //Acquire book datafrom user
+cin>> pagecount;
+
+
+}
+void putdata()
+{
+publication::putdata();//show publication data
+cout <<"book page count"<< pagecount<<endl;//show book data
+
+
+}
+};
+class tape:public publication
+{
+private:
+float ptime;
+public:
+void getdata()
+{
+publication::getdata();
+cout<<"Enter tape s playing time(in min)";
+cin>>ptime;
+}
+void putdata()
+{
+publication::putdata();
+cout<<"tapes playing time" <<ptime<<endl;
+}
+};
+int main()
+{
+book b;
+tape t;
+b.getdata();
+t.getdata();
+b.putdata();
+t.putdata();
+return 0;
+}
