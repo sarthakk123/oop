@@ -4,14 +4,14 @@ class complex
 {
 float realp,imagp;
 public:
-complex() //default constructor
+complex() 
 {
 realp=0;
 imagp=0;
 }
 complex operator+(complex &); 
 complex operator*(complex &); 
-complex(float,float); //parameterized constructor
+complex(float,float); 
 friend istream &operator>>(istream &,complex &);
 friend ostream &operator<<(ostream &,complex &);
 };
