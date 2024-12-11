@@ -25,9 +25,9 @@ int pagecount;
 public:
 void getdata()
 {
-publication::getdata(); //call publication class function to get data
+publication::getdata(); 
   
-cout <<" Enter Book Page Count :"; //Acquire book datafrom user
+cout <<" Enter Book Page Count :"; 
 cin>> pagecount;
 
 
@@ -35,7 +35,7 @@ cin>> pagecount;
 void putdata()
 {
 publication::putdata();//show publication data
-cout <<"book page count"<< pagecount<<endl;//show book data
+cout <<"book page count"<< pagecount<<endl;
 
 
 }
