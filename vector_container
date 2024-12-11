@@ -11,7 +11,7 @@ typedef struct rec
 	char phone[11];
 }node;
 node temp;
-vector<node> rec; // create an empty vector
+vector<node> rec; 
 vector<node>::iterator ptr;
 
 bool compare(node &r1,node &r2)
@@ -31,7 +31,7 @@ void Create()
 	{ 
 		cout<<"\n Name: ";
 		cin>>temp.name;
-		cout<<"\n Birth Date(dd-mm-yy): ";
+		cout<<"\n Birth Date: ";
 		cin>>temp.BirthDt;
 		cout<<"\n Phone: ";
 		cin>>temp.phone;
@@ -41,10 +41,8 @@ void Create()
 void Display()
 {
 	cout<<"\n\tThe contents of the database are: ";
-	cout<<"\n------------------------------------------------";
-	cout<<"\n Name            Birth Date           Phone";
-	cout<<"\n------------------------------------------------";
-	for(ptr=rec.begin();ptr!=rec.end();ptr++)//accessing the contents thru iterator
+	cout<<"\n Name          Birth Date           Phone";
+	for(ptr=rec.begin();ptr!=rec.end();ptr++)
 	{
 		cout<<"\n";
 		cout<<"    "<<(*ptr).name;
