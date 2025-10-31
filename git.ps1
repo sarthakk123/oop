@@ -7,8 +7,6 @@ $FileName = Read-Host "Enter file name (example: FDS 1 or folder/file.txt)"
 
 $FileUrl = "https://raw.githubusercontent.com/$User/$Repo/refs/heads/$Branch/$FileName"
 
-Write-Host "`nFetching content from:`n$FileUrl`n"
-
 try {
     $Response = Invoke-RestMethod -Uri $FileUrl -UseBasicParsing
     Write-Host "----- FILE CONTENT START -----`n"
