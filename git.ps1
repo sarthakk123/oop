@@ -1,13 +1,10 @@
-# Ask for repository and branch (optional)
 $User = "sarthakk123"
 $Repo = Read-Host "Enter repository name (e.g. FDS)"
 $Branch = Read-Host "Enter branch name (default: main)"
 if (-not $Branch) { $Branch = "main" }
 
-# Ask for file name
 $FileName = Read-Host "Enter file name (example: FDS 1 or folder/file.txt)"
 
-# Construct raw URL
 $FileUrl = "https://raw.githubusercontent.com/$User/$Repo/refs/heads/$Branch/$FileName"
 
 Write-Host "`nFetching content from:`n$FileUrl`n"
