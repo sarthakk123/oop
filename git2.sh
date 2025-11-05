@@ -1,15 +1,12 @@
 #!/bin/bash
 
 User="sarthakk123"
-
+Branch="main"
 # Prompt for repository name
 read -p "Enter repository name (e.g. FDS): " Repo
 
 # Prompt for branch name with a default value of 'main'
-read -p "Enter branch name (default: main): " Branch
-if [ -z "$Branch" ];then
-  Branch="main"
-fi
+
 
 # Prompt for file or folder name
 read -p "Enter file name (example: FDS 1 or folder/file.txt): " FileName
