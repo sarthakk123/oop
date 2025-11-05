@@ -1,12 +1,13 @@
 #!/bin/bash
 
+# GitHub username
 User="sarthakk123"
+
+# Default branch
 Branch="main"
+
 # Prompt for repository name
 read -p "Enter repository name (e.g. FDS): " Repo
-
-# Prompt for branch name with a default value of 'main'
-
 
 # Prompt for file or folder name
 read -p "Enter file name (example: FDS 1 or folder/file.txt): " FileName
