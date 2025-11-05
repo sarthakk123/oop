@@ -7,7 +7,7 @@ read -p "Enter repository name (e.g. FDS): " Repo
 
 # Prompt for branch name with a default value of 'main'
 read -p "Enter branch name (default: main): " Branch
-if [ -z "$Branch" ]; then
+if [ -z "$Branch" ];then
   Branch="main"
 fi
 
